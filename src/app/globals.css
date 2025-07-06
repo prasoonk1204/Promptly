@@ -3,6 +3,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --background-rgb: 255, 255, 255;
+  --foreground-rgb: 23, 23, 23;
+
+  --grid-color: #e2e8f0;
+
+  --border-color: #bababa;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  --background-rgb: 10, 10, 10;
+  --foreground-rgb: 237, 237, 237;
+
+  --grid-color: #171717;
+
+  --border-color: #3b3b3b;
 }
 
 @theme inline {
@@ -12,15 +31,93 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  border-color: var(--border-color);
+}
+
+@layer utilities {
+  .cardborder {
+    border-color: var(--border-color);
+  }
+}
+
+
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+.transition-all {
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes scrollX {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scrollX {
+  animation: scrollX 40s linear infinite;
+}
+
+
+.timeline-node {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .timeline-node:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 32px; 
+    right: calc(-50% + 32px);
+    width: calc(100% - 64px); 
+    height: 2px;
+    border-top: 2px dashed theme('colors.gray.300');
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline-node:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 72px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 64px; 
+    border-left: 2px dashed theme('colors.gray.300');
+  }
+}
+
+.timeline-node:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  background: white;
+  border: 3px solid theme('colors.blue.500');
+  border-radius: 9999px;
+  width: 12px;
+  height: 12px;
+}
+
+
+@media (min-width: 768px) {
+  .timeline-node:not(:last-child)::before {
+    top: 29px;
+    right: -6px;
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline-node:not(:last-child)::before {
+    top: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
