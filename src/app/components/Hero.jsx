@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -37,7 +38,7 @@ export default function Hero() {
         style={{ color: "var(--foreground)" }}
       >
         Your Shortcut to
-        <span className="text-blue-500"> 
+        <span className="text-blue-500">
           <br /> Powerful Prompts
         </span>
       </motion.h1>
@@ -59,9 +60,11 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
         variants={fadeUp}
-        className="bg-blue-500 text-white px-8 py-3 text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:-translate-y-2 flex gap-2 items-center relative z-10 hover:cursor-pointer"
+        className="bg-blue-500 text-white px-8 py-3 text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:-translate-y-2  relative z-10 hover:cursor-pointer"
       >
-        Refine your prompt <ArrowRight />
+        <Link href="/app" className="flex gap-2 items-center">
+          Refine your prompt <ArrowRight />
+        </Link>
       </motion.button>
     </div>
   );

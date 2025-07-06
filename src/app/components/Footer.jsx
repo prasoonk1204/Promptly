@@ -7,25 +7,25 @@ import { motion } from "framer-motion";
 const socialLinks = [
   {
     name: "Twitter",
-    url: "https://www.twitter.com",
+    url: "https://www.twitter.com/kenma_dev",
     icon: Twitter,
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com",
+    url: "/instagram",
     icon: Instagram,
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com",
+    url: "/linkedin",
     icon: Linkedin,
   },
 ];
 
 const quickLinks = [
-  { name: "Feedback", url: "#" },
-  { name: "Report an Issue", url: "#" },
-  { name: "Mail Us", url: "#" },
+  { name: "Feedback", url: "/feedback" },
+  { name: "Report an Issue", url: "/report" },
+  { name: "Mail Us", url: "/mailus" },
 ];
 
 const fadeUp = {
@@ -70,7 +70,6 @@ const Footer = () => {
               <motion.a
                 key={name}
                 href={url}
-                target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Follow us on ${name}`}
                 className="hover:text-blue-600 hover:-translate-y-1 transition-all duration-300 text-xl p-3 rounded-full border cardborder hover:border-blue-500"
