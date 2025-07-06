@@ -24,14 +24,14 @@ export default function NotFound() {
       <main className="flex flex-1 flex-col items-center justify-center z-10 relative text-center px-6">
         <h1 className="text-6xl font-bold tracking-tight mb-4">404</h1>
         <p className="text-xl mb-12">
-          Oops! The page you're looking for doesn't exist.
+          Oops! The page you&apos;re looking for doesn&apos;t exist.
         </p>
         <Link
           href="/"
           className="px-6 py-3 rounded-xl hover:opacity-80 transition"
           style={{
             background: "var(--foreground)",
-            color: "var(--background)"
+            color: "var(--background)",
           }}
         >
           Go back home
