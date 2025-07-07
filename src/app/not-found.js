@@ -28,7 +28,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="px-6 py-3 rounded-xl hover:opacity-80 transition"
+          className="px-6 py-3 rounded-xl hover:opacity-80 hover:-translate-y-2 transition-all duration-300"
           style={{
             background: "var(--foreground)",
             color: "var(--background)",

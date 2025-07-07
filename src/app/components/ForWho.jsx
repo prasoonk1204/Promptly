@@ -63,9 +63,9 @@ export default function ForWho() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-5xl mb-12"
+        className="text-3xl sm:text-5xl mb-12"
       >
-        Who It’s For
+        Who It&apos;s For
       </motion.h2>
 
       <div className="relative w-full max-w-6xl overflow-hidden">

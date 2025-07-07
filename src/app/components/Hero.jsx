@@ -34,7 +34,7 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
         variants={fadeUp}
-        className="text-4xl sm:text-7xl lg:text-8xl font-bold mb-10 relative z-10"
+        className="text-[42px] sm:text-7xl lg:text-8xl font-bold mb-10 relative z-10"
         style={{ color: "var(--foreground)" }}
       >
         Your Shortcut to
@@ -60,7 +60,7 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
         variants={fadeUp}
-        className="bg-blue-500 text-white px-8 py-3 text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:-translate-y-2  relative z-10 hover:cursor-pointer"
+        className="bg-blue-500 text-white px-5 sm:px-8 py-3 text-[18px] sm:text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:-translate-y-2  relative z-10 hover:cursor-pointer"
       >
         <Link href="/app" className="flex gap-2 items-center">
           Refine your prompt <ArrowRight />
