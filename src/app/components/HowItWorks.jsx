@@ -9,10 +9,6 @@ const steps = [
     icon: ClipboardPaste,
   },
   {
-    title: "Choose your goal or tone",
-    icon: SlidersHorizontal,
-  },
-  {
     title: "Get your refined prompt — optimized and ready",
     icon: CheckCheck,
   },
@@ -81,7 +77,7 @@ export default function HowItWorks() {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="mb-4 rounded-full p-4"
                 style={{
-                  backgroundColor: "rgba(147, 197, 253, 0.15)", // blue-200 w/ transparency
+                  backgroundColor: "rgba(147, 197, 253, 0.15)",
                 }}
               >
                 <Icon className="h-10 w-10 text-blue-600" />

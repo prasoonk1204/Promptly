@@ -15,11 +15,6 @@ const fadeUp = {
 export default function Features() {
   const feature = [
     {
-      title: "Goal-Based Prompting",
-      description: "Select what you want: persuasive, concise, detailed, etc",
-      Icon: Target,
-    },
-    {
       title: "AI-Tuned Refinement",
       description: "Prompts tailored to work with ChatGPT, Claude, and more",
       Icon: Wand2,
@@ -28,13 +23,7 @@ export default function Features() {
       title: "Instant Results",
       description: "No signup required — just paste and enhance",
       Icon: Rocket,
-    },
-    {
-      title: "Style & Tone Options",
-      description:
-        "Customize how your AI should respond: formal, playful, technical",
-      Icon: Type,
-    },
+    }
   ];
 
   return (
