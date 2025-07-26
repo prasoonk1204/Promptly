@@ -1,10 +1,10 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import ForWho from "@/components/ForWho";
-import Features from "@/components/Features";
-import HowItWorks from "@/components/HowItWorks";
-import Testimonials from "@/components/Testimonials";
-import Footer from "@/components/Footer";
+import Hero from "@/components/landing/Hero";
+import ForWho from "@/components/landing/ForWho";
+import Features from "@/components/landing/Features";
+import HowItWorks from "@/components/landing/HowItWorks";
+import Testimonials from "@/components/landing/Testimonials";
+import Footer from "@/components/landing/Footer";
 
 export default function Landing() {
   return (

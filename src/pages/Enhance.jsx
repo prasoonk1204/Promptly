@@ -2,11 +2,11 @@
 
 import { useState } from "react";
 import Header from "@/components/Header";
-import PromptInput from "@/components/PromptInput";
-import EnhancedPrompt from "@/components/EnhancedPrompt";
+import PromptInput from "@/components/enhance/PromptInput";
+import EnhancedPrompt from "@/components/enhance/EnhancedPrompt";
 import { motion } from "framer-motion";
 
-export default function Home() {
+export default function Enhance() {
   const [enhanced, setEnhanced] = useState("");
 
   return (

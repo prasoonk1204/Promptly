@@ -27,7 +27,7 @@ export default function PromptInput({ setEnhanced }) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-6 mt-22 backdrop-blur-[2px] w-full max-w-4xl rounded-2xl gap-4 h-75 shadow-md shadow-zinc-500/20 border-[0.01px] cardborder">
+    <div className="flex flex-col items-center justify-center p-4 mt-22 backdrop-blur-[2px] w-full max-w-4xl rounded-2xl gap-4 h-75 shadow-md shadow-zinc-500/20 border-[0.01px] cardborder">
       <div className="relative w-full h-full">
         <textarea
           placeholder="Type your prompt here..."

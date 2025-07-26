@@ -62,7 +62,7 @@ export default function Hero() {
         variants={fadeUp}
       >
         <Link
-          href="/home"
+          href="/enhance"
           className="flex gap-2 items-center bg-blue-500 text-white px-5 sm:px-8 py-3 text-[18px] sm:text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-105  relative z-10 hover:cursor-pointer"
         >
           Refine your prompt <ArrowRight />
