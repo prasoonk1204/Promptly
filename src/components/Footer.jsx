@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Twitter, Instagram, Linkedin } from "lucide-react";
+import { Twitter} from "lucide-react";
 import { motion } from "framer-motion";
 
 const socialLinks = [
@@ -10,22 +10,17 @@ const socialLinks = [
     url: "https://www.twitter.com/kenma_dev",
     icon: Twitter,
   },
-  {
-    name: "Instagram",
-    url: "/instagram",
-    icon: Instagram,
-  },
-  {
-    name: "LinkedIn",
-    url: "/linkedin",
-    icon: Linkedin,
-  },
 ];
 
 const quickLinks = [
-  { name: "Feedback", url: "/feedback" },
-  { name: "Report an Issue", url: "/report" },
-  { name: "Mail Us", url: "/mailus" },
+  {
+    name: "Feedback",
+    url: "mailto:abcdxyz1213140@gmail.com?subject=Feedback%20for%20Promptly.ai&body=Hi%20Promptly%20Team%2C%0A%0AI%20would%20like%20to%20share%20my%20feedback%3A%0A",
+  },
+  {
+    name: "Report an Issue",
+    url: "mailto:abcdxyz1213140@gmail.com?subject=Bug%20Report%20for%20Promptly.ai&body=Hi%20Promptly%20Team%2C%0A%0AI%20encountered%20the%20following%20issue%3A%0A",
+  },
 ];
 
 const fadeUp = {
