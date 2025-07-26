@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className="">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/logo.svg" sizes="any" />
       </head>

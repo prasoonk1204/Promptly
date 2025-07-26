@@ -20,13 +20,13 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.3, scale: 1 }}
         transition={{ duration: 3, delay: 0.5 }}
-        className="absolute bottom-[100px] right-[-30px] w-[300px] h-[300px] bg-sky-300 dark:bg-blue-900 opacity-30 rounded-full blur-3xl z-0"
+        className="absolute bottom-[100px] right-[-30px] w-[300px] h-[300px] bg-blue-400 opacity-30 rounded-full blur-3xl z-0"
       />
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.3, scale: 1 }}
         transition={{ duration: 3, delay: 0.5 }}
-        className="absolute top-[80px] left-[-80px] w-[250px] h-[250px] bg-blue-400 dark:bg-sky-700 opacity-30 rounded-full blur-3xl z-0"
+        className="absolute top-[80px] left-[-80px] w-[250px] h-[250px] bg-blue-500 opacity-30 rounded-full blur-3xl z-0"
       />
 
       <motion.h1
@@ -60,9 +60,11 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
         variants={fadeUp}
-        className="bg-blue-500 text-white px-5 sm:px-8 py-3 text-[18px] sm:text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:-translate-y-2  relative z-10 hover:cursor-pointer"
       >
-        <Link href="/app" className="flex gap-2 items-center">
+        <Link
+          href="/home"
+          className="flex gap-2 items-center bg-blue-500 text-white px-5 sm:px-8 py-3 text-[18px] sm:text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-105  relative z-10 hover:cursor-pointer"
+        >
           Refine your prompt <ArrowRight />
         </Link>
       </motion.button>
