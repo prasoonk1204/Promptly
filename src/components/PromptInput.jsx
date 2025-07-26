@@ -8,8 +8,8 @@ export default function PromptInput({ setEnhanced }) {
   const [loading, setLoading] = useState(false);
 
   const getCounterClass = () => {
-    if (prompt.length > 950) return "text-red-500";
-    if (prompt.length > 800) return "text-yellow-500";
+    if (prompt.length > 1900) return "text-red-500";
+    if (prompt.length > 1800) return "text-yellow-500";
     return "text-zinc-500";
   };
 
@@ -33,7 +33,7 @@ export default function PromptInput({ setEnhanced }) {
           placeholder="Type your prompt here..."
           value={prompt}
           onChange={(e) => {
-            if (e.target.value.length <= 1000) {
+            if (e.target.value.length <= 2000) {
               setPrompt(e.target.value);
             }
           }}
@@ -43,7 +43,7 @@ export default function PromptInput({ setEnhanced }) {
         <div
           className={`absolute bottom-4 right-4 text-sm px-2 border rounded-md ${getCounterClass()}`} style={{ backgroundColor: "var(--background)"}}
         >
-          {prompt.length}/1000
+          {prompt.length}/2000
         </div>
       </div>
 
