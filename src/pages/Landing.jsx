@@ -30,7 +30,6 @@ export default function Landing() {
         <ForWho />
         <Features />
         <HowItWorks />
-        <Testimonials />
         <Footer />
       </main>
     </div>
