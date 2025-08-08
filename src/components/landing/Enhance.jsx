@@ -9,10 +9,10 @@ export default function Enhance() {
 
   return (
     <div
-      className="min-h-screen w-full theme-wrapper transition-colors relative overflow-x-hidden"
+      className="w-full theme-wrapper transition-colors relative overflow-x-hidden min-h-[800px]"
       id="enhance"
     >
-      <main className="flex flex-col items-center justify-center z-10 relative p-4 w-full">
+      <main className="flex flex-col items-center justify-center gap-8 z-10 relative p-4 w-full">
         <PromptInput setEnhanced={setEnhanced} />
         {enhanced && <EnhancedPrompt content={enhanced} />}
       </main>

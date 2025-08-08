@@ -15,7 +15,7 @@ const fadeUp = {
 
 export default function Hero() {
   return (
-    <div className="relative w-full mx-auto flex flex-col items-center justify-center text-center h-screen z-10 px-6 overflow-hidden">
+    <div className="relative w-full mx-auto min-h-[800px] flex flex-col items-center justify-center text-center z-10 px-6 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.3, scale: 1 }}
@@ -63,7 +63,7 @@ export default function Hero() {
       >
         <Link
           href="#enhance"
-          scroll={true} // Optional in Next.js 13+ App Router, ensures smooth scrolling
+          scroll={true}
           className="flex gap-2 items-center bg-blue-500 text-white px-5 sm:px-8 py-3 text-[18px] sm:text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-105 relative z-10 hover:cursor-pointer"
         >
           Refine your prompt <ArrowDown />
