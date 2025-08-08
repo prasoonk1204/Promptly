@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Twitter} from "lucide-react";
+import { Twitter, Github} from "lucide-react";
 import { motion } from "framer-motion";
 
 const socialLinks = [
@@ -9,6 +9,11 @@ const socialLinks = [
     name: "Twitter",
     url: "https://www.twitter.com/kenma_dev",
     icon: Twitter,
+  },
+  {
+    name: "Github",
+    url: "https://github.com/prasoonk1204/Promptly",
+    icon: Github,
   },
 ];
 

@@ -5,12 +5,13 @@ import Features from "@/components/landing/Features";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Testimonials from "@/components/landing/Testimonials";
 import Footer from "@/components/landing/Footer";
+import Enhance from "@/components/landing/Enhance";
 
 export default function Landing() {
   return (
     <div className="min-h-screen w-full theme-wrapper transition-colors relative">
       <div
-        className="absolute inset-0 z-0 pointer-events-none"
+        className="fixed inset-0 z-0 pointer-events-none"
         style={{
           backgroundImage: `
       linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
@@ -27,9 +28,10 @@ export default function Landing() {
       <Header />
       <main className="flex flex-col items-center justify-center z-10 relative">
         <Hero />
-        <ForWho />
+        <Enhance />
         <Features />
         <HowItWorks />
+        <ForWho />
         <Footer />
       </main>
     </div>

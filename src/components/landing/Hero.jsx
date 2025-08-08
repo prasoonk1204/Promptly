@@ -1,8 +1,8 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { ArrowDown } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -62,10 +62,11 @@ export default function Hero() {
         variants={fadeUp}
       >
         <Link
-          href="/enhance"
-          className="flex gap-2 items-center bg-blue-500 text-white px-5 sm:px-8 py-3 text-[18px] sm:text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-105  relative z-10 hover:cursor-pointer"
+          href="#enhance"
+          scroll={true} // Optional in Next.js 13+ App Router, ensures smooth scrolling
+          className="flex gap-2 items-center bg-blue-500 text-white px-5 sm:px-8 py-3 text-[18px] sm:text-xl rounded-xl hover:bg-blue-600 transition-all duration-300 hover:scale-105 relative z-10 hover:cursor-pointer"
         >
-          Refine your prompt <ArrowRight />
+          Refine your prompt <ArrowDown />
         </Link>
       </motion.button>
     </div>

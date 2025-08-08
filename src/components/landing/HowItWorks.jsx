@@ -42,11 +42,7 @@ const lineVariant = {
 export default function HowItWorks() {
   return (
     <section
-      className="py-20 relative overflow-hidden"
-      style={{
-        background: "var(--background)",
-        color: "var(--foreground)",
-      }}
+      className="py-10 mt-20 relative overflow-hidden backdrop-blur-[5px] rounded-3xl"
     >
       <div className="max-w-6xl mx-auto px-6 text-center">
         <motion.h2

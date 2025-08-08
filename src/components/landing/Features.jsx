@@ -27,7 +27,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="w-full max-w-5xl mx-auto px-8 py-24 text-center">
+    <section className="w-full max-w-5xl mx-auto p-8 mt-20 text-center backdrop-blur-[5px]">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -48,10 +48,7 @@ export default function Features() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="relative border cardborder hover:border-blue-500 rounded-xl shadow-sm p-6 transition-all hover:shadow-lg shadow-blue-500/30 hover:scale-[1.02] flex flex-col justify-center items-center h-40"
-            style={{
-              background: "var(--background)",
-            }}
+            className="relative border cardborder hover:border-blue-500 rounded-xl shadow-sm p-6 transition-all hover:shadow-lg shadow-blue-500/30 hover:scale-[1.02] flex flex-col justify-center items-center h-40 backdrop-blur-[5px]"
           >
             <div
               className="absolute -top-8 md:-top-7 left-1/2 -translate-x-1/2 rounded-full p-4"

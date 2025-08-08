@@ -52,9 +52,8 @@ const ForWhoCard = ({ title, description, index }) => (
 export default function ForWho() {
   return (
     <section
-      className="w-full max-w-5xl flex flex-col justify-center items-center py-24"
+      className="w-full max-w-5xl flex flex-col justify-center items-center py-8 backdrop-blur-[5px] mt-20"
       style={{
-        background: "var(--background)",
         color: "var(--foreground)",
       }}
     >
