@@ -14,6 +14,12 @@ export default function RootLayout({ children }) {
           content="https://ik.imagekit.io/kenma/promptly-og.png?updatedAt=1754655475905"
         />
         <meta property="og:url" content="https://promptlyai-kenma.vercel.app" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Promptly.ai" />
+        <meta name="twitter:description" content="Ai Prompt Enhancer" />
+        <meta name="twitter:image" content="https://ik.imagekit.io/kenma/promptly-og.png?updatedAt=1754655475905" />
+        <meta name="twitter:url" content="https://promptlyai-kenma.vercel.app" />
       </head>
       <body className={` antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
@@ -23,4 +29,5 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
+
 }
